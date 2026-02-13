@@ -1,4 +1,4 @@
-import registry from "@/../../registry.json"
+import registry from "../../registry.json"
 
 export function getRegistryItem(name: string) {
   return registry.items.find((item) => item.name === name)
