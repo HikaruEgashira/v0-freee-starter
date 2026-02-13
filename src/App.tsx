@@ -1,4 +1,5 @@
 import { HelmetProvider, Helmet } from '@dr.pogodin/react-helmet'
+import { Header } from './layout/header'
 import { Footer } from './layout/footer'
 import HomePage from './pages/home-page'
 
@@ -12,6 +13,7 @@ function App() {
           content="freeeのデザイン哲学"
         />
       </Helmet>
+      <Header />
       <main>
         <HomePage />
       </main>

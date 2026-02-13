@@ -90,10 +90,10 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <button className="h-12 rounded-sm bg-primary px-8 text-lg font-bold text-white transition-colors hover:bg-primary-800">
-                デザインを体験する
+                今すぐ始める
               </button>
               <button className="h-12 rounded-sm border border-primary bg-background px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
-                哲学を知る
+                デモを見る
               </button>
             </div>
             <p className="mt-4 text-sm text-sub-text">
