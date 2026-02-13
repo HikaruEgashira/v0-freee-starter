@@ -51,21 +51,6 @@ pnpm registry:build  # /public/r/*.json を生成
 pnpm dev             # http://localhost:3000
 ```
 
-## MCP (AI IDE連携)
-
-Cursor や Windsurf で利用する場合:
-
-```json
-{
-  "mcpServers": {
-    "shadcn": {
-      "command": "npx",
-      "args": ["-y", "@anthropic-ai/shadcn-mcp-server", "https://v0-freee-starter.vercel.app"]
-    }
-  }
-}
-```
-
 ## References
 
 - [freee Brand Design Philosophy](https://brand.freee.co.jp/designphilosophy/)
