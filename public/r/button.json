@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "title": "Button",
+  "description": "Button with primary, outline, ghost, destructive variants",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "theme"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/button.tsx",
+      "content": "import * as React from 'react'\nimport { Slot } from '@radix-ui/react-slot'\nimport { cva, type VariantProps } from 'class-variance-authority'\nimport { cn } from '@/lib/utils'\n\nconst buttonVariants = cva(\n  'inline-flex items-center justify-center whitespace-nowrap rounded-lg font-bold text-base transition-colors focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed',\n  {\n    variants: {\n      variant: {\n        default: 'bg-primary text-white hover:bg-primary-800 active:bg-primary-900',\n        outline: 'border border-primary bg-white text-primary hover:bg-primary-50',\n        ghost: 'text-primary hover:bg-primary-50',\n        destructive: 'bg-destructive text-white hover:bg-red-700 active:bg-red-900',\n      },\n      size: {\n        sm: 'h-8 px-4 text-sm',\n        default: 'h-10 px-6',\n        lg: 'h-12 px-8 text-lg',\n      },\n    },\n    defaultVariants: {\n      variant: 'default',\n      size: 'default',\n    },\n  }\n)\n\nexport interface ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean\n}\n\nconst Button = React.forwardRef<HTMLButtonElement, ButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : 'button'\n    return (\n      <Comp\n        className={cn(buttonVariants({ variant, size, className }))}\n        ref={ref}\n        {...props}\n      />\n    )\n  }\n)\nButton.displayName = 'Button'\n\nexport { Button, buttonVariants }\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/button.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "split-section",
+  "title": "Split Section",
+  "description": "Two-column text and media layout",
+  "registryDependencies": [
+    "theme"
+  ],
+  "files": [
+    {
+      "path": "registry/blocks/split-section.tsx",
+      "content": "export interface SplitSectionProps {\n  title?: string\n  description?: string\n  features?: string[]\n  visualSide?: 'left' | 'right'\n}\n\nexport function SplitSection({\n  title = \"スプリットセクション\",\n  description = \"テキストとメディアを左右に配置するパターンです。説明文を左に、図やスクリーンショットを右に配置して情報を整理します。\",\n  features = [\n    \"レスポンシブで縦積みに切り替わる\",\n    \"items-center で上下中央揃え\",\n    \"gap-12 で十分な余白を確保\",\n  ],\n  visualSide = 'right',\n}: SplitSectionProps) {\n  const textContent = (\n    <div>\n      <h2 className=\"mb-4 text-lg font-bold text-foreground\">{title}</h2>\n      <p className=\"mb-4 text-base leading-relaxed text-muted-foreground\">{description}</p>\n      <ul className=\"space-y-2 text-base text-muted-foreground\">\n        {features.map((feature) => (\n          <li key={feature} className=\"flex items-start gap-2\">\n            <span className=\"mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary\" />\n            {feature}\n          </li>\n        ))}\n      </ul>\n    </div>\n  )\n\n  const visualContent = (\n    <div className=\"rounded-xl bg-muted p-8\">\n      <div className=\"aspect-video rounded-lg bg-border\" />\n    </div>\n  )\n\n  return (\n    <section className=\"bg-white\">\n      <div className=\"mx-auto grid max-w-[70rem] items-center gap-12 px-6 py-16 md:grid-cols-2\">\n        {visualSide === 'left' ? (\n          <>\n            {visualContent}\n            {textContent}\n          </>\n        ) : (\n          <>\n            {textContent}\n            {visualContent}\n          </>\n        )}\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:block",
+      "target": "src/components/split-section.tsx"
+    }
+  ],
+  "type": "registry:block"
+}

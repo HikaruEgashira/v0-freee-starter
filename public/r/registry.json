@@ -1,0 +1,176 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "freee-starter",
+  "homepage": "https://v0-freee-starter.vercel.app",
+  "description": "freee design system registry",
+  "items": [
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "description": "freee brand color theme",
+      "cssVars": {
+        "light": {
+          "--background": "#ffffff",
+          "--foreground": "#323232",
+          "--card": "#ffffff",
+          "--card-foreground": "#323232",
+          "--popover": "#ffffff",
+          "--popover-foreground": "#323232",
+          "--primary": "#285ac8",
+          "--primary-foreground": "#ffffff",
+          "--secondary": "#f0eded",
+          "--secondary-foreground": "#323232",
+          "--muted": "#f7f5f5",
+          "--muted-foreground": "#6e6b6b",
+          "--accent": "#ebf3ff",
+          "--accent-foreground": "#285ac8",
+          "--destructive": "#dc1e32",
+          "--border": "#e9e7e7",
+          "--input": "#e9e7e7",
+          "--ring": "#2864f0"
+        }
+      }
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Button with primary, outline, ghost, destructive variants",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Card with header, content, and footer sections",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/ui/card.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Text input with focus ring",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Form label",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/label.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-split",
+      "type": "registry:block",
+      "title": "Hero Split",
+      "description": "Two-column hero with text and visual area",
+      "registryDependencies": ["button", "theme"],
+      "files": [
+        {
+          "path": "registry/blocks/hero-split.tsx",
+          "type": "registry:block",
+          "target": "src/components/hero-split.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-bar",
+      "type": "registry:block",
+      "title": "Stats Bar",
+      "description": "Three-column statistics display",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/blocks/stats-bar.tsx",
+          "type": "registry:block",
+          "target": "src/components/stats-bar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-grid",
+      "type": "registry:block",
+      "title": "Card Grid",
+      "description": "Responsive card grid (1/2/3 columns)",
+      "registryDependencies": ["card", "theme"],
+      "files": [
+        {
+          "path": "registry/blocks/card-grid.tsx",
+          "type": "registry:block",
+          "target": "src/components/card-grid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "split-section",
+      "type": "registry:block",
+      "title": "Split Section",
+      "description": "Two-column text and media layout",
+      "registryDependencies": ["theme"],
+      "files": [
+        {
+          "path": "registry/blocks/split-section.tsx",
+          "type": "registry:block",
+          "target": "src/components/split-section.tsx"
+        }
+      ]
+    },
+    {
+      "name": "cta-banner",
+      "type": "registry:block",
+      "title": "CTA Banner",
+      "description": "Full-width call-to-action banner",
+      "registryDependencies": ["button", "theme"],
+      "files": [
+        {
+          "path": "registry/blocks/cta-banner.tsx",
+          "type": "registry:block",
+          "target": "src/components/cta-banner.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-layout",
+      "type": "registry:block",
+      "title": "Form Layout",
+      "description": "Vertical form with labels, inputs, and textarea",
+      "registryDependencies": ["button", "input", "label", "theme"],
+      "files": [
+        {
+          "path": "registry/blocks/form-layout.tsx",
+          "type": "registry:block",
+          "target": "src/components/form-layout.tsx"
+        }
+      ]
+    }
+  ]
+}

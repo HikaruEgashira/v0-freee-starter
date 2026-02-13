@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-grid",
+  "title": "Card Grid",
+  "description": "Responsive card grid (1/2/3 columns)",
+  "registryDependencies": [
+    "card",
+    "theme"
+  ],
+  "files": [
+    {
+      "path": "registry/blocks/card-grid.tsx",
+      "content": "import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'\n\nexport interface CardItem {\n  title: string\n  desc: string\n}\n\nexport interface CardGridProps {\n  title?: string\n  subtitle?: string\n  cards?: CardItem[]\n}\n\nexport function CardGrid({\n  title = \"カードグリッド\",\n  subtitle = \"md:grid-cols-2 → lg:grid-cols-3 のレスポンシブカードレイアウト\",\n  cards = [\n    { title: \"会計機能\", desc: \"日々の取引を自動で記帳し、帳簿を効率的に管理できます。\" },\n    { title: \"請求書管理\", desc: \"請求書の作成から送付、入金管理までをワンストップで対応。\" },\n    { title: \"経費精算\", desc: \"レシート撮影で経費を自動入力。承認フローも簡単設定。\" },\n    { title: \"給与計算\", desc: \"勤怠データから給与を自動計算。明細発行もスムーズに。\" },\n    { title: \"レポート\", desc: \"売上・経費・利益をリアルタイムでダッシュボード表示。\" },\n    { title: \"API連携\", desc: \"外部サービスとの連携で業務フローを最適化できます。\" },\n  ],\n}: CardGridProps) {\n  return (\n    <section className=\"bg-background\">\n      <div className=\"mx-auto max-w-[70rem] px-6 py-16\">\n        <h2 className=\"mb-2 text-lg font-bold text-foreground\">{title}</h2>\n        <p className=\"mb-8 text-base text-muted-foreground\">{subtitle}</p>\n        <div className=\"grid gap-6 md:grid-cols-2 lg:grid-cols-3\">\n          {cards.map((card, index) => (\n            <Card key={`${card.title}-${index}`}>\n              <CardHeader>\n                <div className=\"mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-50\">\n                  <div className=\"h-5 w-5 rounded bg-primary-300\" />\n                </div>\n                <CardTitle>{card.title}</CardTitle>\n              </CardHeader>\n              <CardContent>\n                <CardDescription>{card.desc}</CardDescription>\n              </CardContent>\n            </Card>\n          ))}\n        </div>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:block",
+      "target": "src/components/card-grid.tsx"
+    }
+  ],
+  "type": "registry:block"
+}

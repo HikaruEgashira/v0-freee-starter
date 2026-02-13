@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme",
+  "description": "freee brand color theme",
+  "cssVars": {
+    "light": {
+      "--background": "#ffffff",
+      "--foreground": "#323232",
+      "--card": "#ffffff",
+      "--card-foreground": "#323232",
+      "--popover": "#ffffff",
+      "--popover-foreground": "#323232",
+      "--primary": "#285ac8",
+      "--primary-foreground": "#ffffff",
+      "--secondary": "#f0eded",
+      "--secondary-foreground": "#323232",
+      "--muted": "#f7f5f5",
+      "--muted-foreground": "#6e6b6b",
+      "--accent": "#ebf3ff",
+      "--accent-foreground": "#285ac8",
+      "--destructive": "#dc1e32",
+      "--border": "#e9e7e7",
+      "--input": "#e9e7e7",
+      "--ring": "#2864f0"
+    }
+  },
+  "type": "registry:theme"
+}
