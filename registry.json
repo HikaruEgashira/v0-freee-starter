@@ -7,6 +7,7 @@
     {
       "name": "theme",
       "type": "registry:theme",
+      "title": "Theme",
       "description": "freee brand color theme",
       "cssVars": {
         "light": {
@@ -30,90 +31,6 @@
           "--ring": "#2864f0"
         }
       }
-    },
-    {
-      "name": "hero-split",
-      "type": "registry:block",
-      "title": "Hero Split",
-      "description": "Two-column hero with text and visual area (requires shadcn/ui button)",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/hero-split.tsx",
-          "type": "registry:block",
-          "target": "src/components/hero-split.tsx"
-        }
-      ]
-    },
-    {
-      "name": "stats-bar",
-      "type": "registry:block",
-      "title": "Stats Bar",
-      "description": "Three-column statistics display",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/stats-bar.tsx",
-          "type": "registry:block",
-          "target": "src/components/stats-bar.tsx"
-        }
-      ]
-    },
-    {
-      "name": "card-grid",
-      "type": "registry:block",
-      "title": "Card Grid",
-      "description": "Responsive card grid (1/2/3 columns) (requires shadcn/ui card)",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/card-grid.tsx",
-          "type": "registry:block",
-          "target": "src/components/card-grid.tsx"
-        }
-      ]
-    },
-    {
-      "name": "split-section",
-      "type": "registry:block",
-      "title": "Split Section",
-      "description": "Two-column text and media layout",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/split-section.tsx",
-          "type": "registry:block",
-          "target": "src/components/split-section.tsx"
-        }
-      ]
-    },
-    {
-      "name": "cta-banner",
-      "type": "registry:block",
-      "title": "CTA Banner",
-      "description": "Full-width call-to-action banner (requires shadcn/ui button)",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/cta-banner.tsx",
-          "type": "registry:block",
-          "target": "src/components/cta-banner.tsx"
-        }
-      ]
-    },
-    {
-      "name": "form-layout",
-      "type": "registry:block",
-      "title": "Form Layout",
-      "description": "Vertical form with labels, inputs, and textarea (requires shadcn/ui button, input, label)",
-      "registryDependencies": ["theme"],
-      "files": [
-        {
-          "path": "registry/blocks/form-layout.tsx",
-          "type": "registry:block",
-          "target": "src/components/form-layout.tsx"
-        }
-      ]
     }
   ]
 }

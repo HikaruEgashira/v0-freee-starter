@@ -26,7 +26,7 @@ export default async function RegistryItemPage({
           <Link href="/" className="text-sm text-muted-foreground hover:text-primary">
             &larr; 一覧に戻る
           </Link>
-          <h1 className="mt-2 text-3xl font-bold text-primary">{item.title}</h1>
+          <h1 className="mt-2 text-3xl font-bold text-primary">{item.title ?? item.name}</h1>
           {item.description && (
             <p className="mt-2 text-muted-foreground">{item.description}</p>
           )}
@@ -37,7 +37,7 @@ export default async function RegistryItemPage({
         <ComponentCard
           name={item.name}
           type={item.type}
-          title={item.title}
+          title={item.title ?? item.name}
           description={item.description}
         />
 
