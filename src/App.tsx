@@ -11,6 +11,7 @@ function App() {
           name="description"
           content="ACME Design System"
         />
+        <meta name="robots" content="noindex" />
       </Helmet>
       <main>
         <HomePage />
