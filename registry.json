@@ -2,12 +2,12 @@
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "freee-starter",
   "homepage": "https://v0-freee-starter.vercel.app",
-  "description": "Production-ready registry with freee brand design tokens and layout patterns",
+  "description": "freee design system registry",
   "items": [
     {
       "name": "theme",
       "type": "registry:theme",
-      "description": "freee brand design theme with primary blue, warm sand neutrals, and semantic colors",
+      "description": "freee brand color theme",
       "cssVars": {
         "light": {
           "--background": "#ffffff",
@@ -35,7 +35,7 @@
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
-      "description": "freee-styled button with primary, outline, ghost, and destructive variants",
+      "description": "Button with primary, outline, ghost, destructive variants",
       "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
       "registryDependencies": ["theme"],
       "files": [
@@ -50,7 +50,7 @@
       "name": "card",
       "type": "registry:ui",
       "title": "Card",
-      "description": "Card component with header, content, and footer with soft sand borders and shadows",
+      "description": "Card with header, content, and footer sections",
       "registryDependencies": ["theme"],
       "files": [
         {
@@ -64,7 +64,7 @@
       "name": "input",
       "type": "registry:ui",
       "title": "Input",
-      "description": "Text input with freee-style focus ring and sand-neutral borders",
+      "description": "Text input with focus ring",
       "registryDependencies": ["theme"],
       "files": [
         {
@@ -78,7 +78,7 @@
       "name": "label",
       "type": "registry:ui",
       "title": "Label",
-      "description": "Form label with bold 12px styling in Japanese font",
+      "description": "Form label",
       "registryDependencies": ["theme"],
       "files": [
         {
@@ -92,7 +92,7 @@
       "name": "hero-split",
       "type": "registry:block",
       "title": "Hero Split",
-      "description": "Two-column hero section with text left and visual right on primary accent background",
+      "description": "Two-column hero with text and visual area",
       "registryDependencies": ["button", "theme"],
       "files": [
         {
@@ -106,7 +106,7 @@
       "name": "stats-bar",
       "type": "registry:block",
       "title": "Stats Bar",
-      "description": "Three-column statistics grid with highlighted numbers and descriptions",
+      "description": "Three-column statistics display",
       "registryDependencies": ["theme"],
       "files": [
         {
@@ -120,7 +120,7 @@
       "name": "card-grid",
       "type": "registry:block",
       "title": "Card Grid",
-      "description": "Responsive card grid layout with responsive columns (1→2→3) and card shadows",
+      "description": "Responsive card grid (1/2/3 columns)",
       "registryDependencies": ["card", "theme"],
       "files": [
         {
@@ -134,7 +134,7 @@
       "name": "split-section",
       "type": "registry:block",
       "title": "Split Section",
-      "description": "Two-column layout with text on left and media on right, vertically centered",
+      "description": "Two-column text and media layout",
       "registryDependencies": ["theme"],
       "files": [
         {
@@ -148,7 +148,7 @@
       "name": "cta-banner",
       "type": "registry:block",
       "title": "CTA Banner",
-      "description": "Full-width call-to-action banner with primary background and button group",
+      "description": "Full-width call-to-action banner",
       "registryDependencies": ["button", "theme"],
       "files": [
         {
@@ -162,7 +162,7 @@
       "name": "form-layout",
       "type": "registry:block",
       "title": "Form Layout",
-      "description": "Vertical form layout with labels, inputs, and textarea with max-width constraint",
+      "description": "Vertical form with labels, inputs, and textarea",
       "registryDependencies": ["button", "input", "label", "theme"],
       "files": [
         {

@@ -3,7 +3,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "freee Starter Registry",
-  description: "Production-ready shadcn registry with freee brand design tokens and layout patterns",
+  description: "freee design system registry",
   robots: "noindex, nofollow",
 }
 

@@ -16,6 +16,9 @@
 # vite
 /dist
 
+# next.js
+/.next
+
 # production
 /build
 

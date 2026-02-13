@@ -10,7 +10,7 @@ export default function Home() {
       <header className="border-b border-border bg-white">
         <div className="mx-auto max-w-7xl px-6 py-8">
           <h1 className="text-3xl font-bold text-primary">freee Starter</h1>
-          <p className="mt-2 text-muted-foreground">Production-ready component registry</p>
+          <p className="mt-2 text-muted-foreground">Component registry</p>
         </div>
       </header>
 
