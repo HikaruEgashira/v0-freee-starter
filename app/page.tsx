@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { CtaSection } from "@/examples/cta-section";
 
 const products = [
   {
@@ -277,7 +276,21 @@ export default function Home() {
         </div>
       </section>
 
-      <CtaSection />
+      {/* CTA */}
+      <section className="bg-primary-600 py-16 text-center text-white">
+        <div className="mx-auto max-w-[70rem] px-6">
+          <h2 className="mb-2 text-xl font-bold">今なら30日間無料でお試し可能</h2>
+          <p className="mb-8 text-base opacity-90">登録はメールアドレスのみ。自動でお支払いは発生しません。</p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <button className="h-12 rounded-sm bg-white px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
+              無料で始める
+            </button>
+            <button className="h-12 rounded-sm border-2 border-white px-8 text-lg font-bold text-white transition-colors hover:bg-white/10">
+              資料をダウンロード
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
