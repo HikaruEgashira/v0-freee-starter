@@ -2,9 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "cta-banner",
   "title": "CTA Banner",
-  "description": "Full-width call-to-action banner",
+  "description": "Full-width call-to-action banner (requires shadcn/ui button)",
   "registryDependencies": [
-    "button",
     "theme"
   ],
   "files": [

@@ -2,9 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "card-grid",
   "title": "Card Grid",
-  "description": "Responsive card grid (1/2/3 columns)",
+  "description": "Responsive card grid (1/2/3 columns) (requires shadcn/ui card)",
   "registryDependencies": [
-    "card",
     "theme"
   ],
   "files": [

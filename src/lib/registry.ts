@@ -26,9 +26,3 @@ export function getBlocks() {
     .filter((item) => item.type === "registry:block")
     .sort((a, b) => a.title.localeCompare(b.title))
 }
-
-export function getUIPrimitives() {
-  return getRegistryItems()
-    .filter((item) => item.type === "registry:ui")
-    .sort((a, b) => a.title.localeCompare(b.title))
-}

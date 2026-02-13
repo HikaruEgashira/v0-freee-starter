@@ -1,9 +1,8 @@
 import Link from "next/link"
-import { getBlocks, getUIPrimitives } from "@/lib/registry"
+import { getBlocks } from "@/lib/registry"
 
 export default function Home() {
   const blocks = getBlocks()
-  const components = getUIPrimitives()
 
   return (
     <div className="min-h-screen bg-background">
@@ -15,7 +14,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto max-w-7xl px-6 py-12">
-        <section className="mb-16">
+        <section>
           <h2 className="mb-6 text-2xl font-bold">Blocks</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {blocks.map((block) => (
@@ -26,22 +25,6 @@ export default function Home() {
               >
                 <h3 className="font-bold text-foreground">{block.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{block.description}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="mb-6 text-2xl font-bold">Components</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {components.map((component) => (
-              <Link
-                key={component.name}
-                href={`/registry/${component.name}`}
-                className="rounded-lg border border-border bg-white p-4 hover:border-primary hover:shadow-floating"
-              >
-                <h3 className="font-bold text-foreground">{component.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{component.description}</p>
               </Link>
             ))}
           </div>

@@ -2,9 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "hero-split",
   "title": "Hero Split",
-  "description": "Two-column hero with text and visual area",
+  "description": "Two-column hero with text and visual area (requires shadcn/ui button)",
   "registryDependencies": [
-    "button",
     "theme"
   ],
   "files": [

@@ -2,11 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "form-layout",
   "title": "Form Layout",
-  "description": "Vertical form with labels, inputs, and textarea",
+  "description": "Vertical form with labels, inputs, and textarea (requires shadcn/ui button, input, label)",
   "registryDependencies": [
-    "button",
-    "input",
-    "label",
     "theme"
   ],
   "files": [
