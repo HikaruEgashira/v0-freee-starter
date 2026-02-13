@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "v0 freee Starter",
-  description: "v0 starter template with freee vibes design tokens",
+  title: "freee | 統合型経営プラットフォーム",
+  description:
+    "すべてのスモールビジネスを支える統合型経営プラットフォーム。会計、人事労務、会社設立まで。",
 };
 
 export default function RootLayout({
@@ -13,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
