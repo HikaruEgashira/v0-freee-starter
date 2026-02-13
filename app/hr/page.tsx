@@ -1,4 +1,4 @@
-import { CtaSection } from "@/components/cta-section";
+import { CtaSection } from "@/examples/cta-section";
 
 const features = [
   {
