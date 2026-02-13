@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+/* ============================================
+   freee vibes Design Tokens
+   https://vibes.freee.co.jp/
+   ============================================ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #323232;
+  --primary: #285ac8;
+  --primary-brand: #2864f0;
+  --primary-light: #ebf3ff;
+  --accent: #73a5ff;
+  --link: #285ac8;
+  --column: #f7f5f5;
+  --base1: #f0eded;
+  --base2: #e9e7e7;
+  --base3: #8c8989;
+  --sub-text: #6e6b6b;
+  --alert: #dc1e32;
+  --notice: #be8c14;
+  --scrim: rgba(0, 0, 0, 0.5);
+  --scrim-thin: rgba(0, 0, 0, 0.12);
+}
+
+@theme {
+  /* Primary (P01-P10) */
+  --color-primary-50: #ebf3ff;
+  --color-primary-100: #dce8ff;
+  --color-primary-200: #aac8ff;
+  --color-primary-300: #73a5ff;
+  --color-primary-400: #2864f0;
+  --color-primary-500: #3264dc;
+  --color-primary-600: #285ac8;
+  --color-primary-700: #1e46aa;
+  --color-primary-800: #23418c;
+  --color-primary-900: #143278;
+
+  /* Sand / Neutral (S01-S10) */
+  --color-sand-50: #f7f5f5;
+  --color-sand-100: #f0eded;
+  --color-sand-200: #e9e7e7;
+  --color-sand-300: #e1dcdc;
+  --color-sand-400: #d7d2d2;
+  --color-sand-500: #bebaba;
+  --color-sand-600: #aaa7a7;
+  --color-sand-700: #8c8989;
+  --color-sand-800: #6e6b6b;
+  --color-sand-900: #464343;
+
+  /* Gray (GY) */
+  --color-gray-50: #fbfbfb;
+  --color-gray-100: #dcdcdc;
+  --color-gray-300: #a0a0a0;
+  --color-gray-500: #5a5a5a;
+  --color-gray-700: #323232;
+  --color-gray-900: #1e1e1e;
+
+  /* Red / Error (RE) */
+  --color-red-100: #fad2d7;
+  --color-red-300: #f07882;
+  --color-red-500: #dc1e32;
+  --color-red-700: #a51428;
+  --color-red-900: #6e0f19;
+
+  /* Orange (OR) */
+  --color-orange-100: #ffe1d2;
+  --color-orange-300: #ffaa78;
+  --color-orange-500: #fa6414;
+  --color-orange-700: #be4b0f;
+  --color-orange-900: #7d320a;
+
+  /* Yellow / Warning (YE) */
+  --color-yellow-100: #fff0d2;
+  --color-yellow-300: #ffd278;
+  --color-yellow-500: #ffb91e;
+  --color-yellow-700: #be8c14;
+  --color-yellow-900: #825a0f;
+
+  /* Yellow-Green (YG) */
+  --color-lime-100: #e6f0d2;
+  --color-lime-300: #b4dc7d;
+  --color-lime-500: #82c31e;
+  --color-lime-700: #50961e;
+  --color-lime-900: #3c5f14;
+
+  /* Green (GR) */
+  --color-green-100: #cdebd7;
+  --color-green-300: #64be8c;
+  --color-green-500: #00963c;
+  --color-green-700: #006e2d;
+  --color-green-900: #004b1e;
+
+  /* Teal (BG) */
+  --color-teal-100: #cdf0f0;
+  --color-teal-300: #64d2d2;
+  --color-teal-500: #00b9b9;
+  --color-teal-700: #008c8c;
+  --color-teal-900: #146464;
+
+  /* Purple (PU) */
+  --color-purple-100: #e6d7fa;
+  --color-purple-300: #b482f0;
+  --color-purple-500: #733ce6;
+  --color-purple-700: #5a2daa;
+  --color-purple-900: #3c1e73;
+
+  /* Semantic Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-brand: var(--primary-brand);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-link: var(--link);
+  --color-column: var(--column);
+  --color-base1: var(--base1);
+  --color-base2: var(--base2);
+  --color-base3: var(--base3);
+  --color-sub-text: var(--sub-text);
+  --color-alert: var(--alert);
+  --color-notice: var(--notice);
+  --color-scrim: var(--scrim);
+  --color-scrim-thin: var(--scrim-thin);
+
+  /* Typography */
+  --font-sans: "-apple-system", BlinkMacSystemFont, "Helvetica Neue",
+    "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo,
+    sans-serif;
+
+  --text-xs: 0.625rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.875rem;
+  --text-lg: 1rem;
+  --text-xl: 1.5rem;
+
+  /* Spacing (base unit: 4px) */
+  --spacing: 0.25rem;
+
+  /* Border Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 99rem;
+
+  /* Shadows */
+  --shadow-card: 0 0 1rem rgba(0, 0, 0, 0.1),
+    0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  --shadow-floating: 0 0 1.5rem rgba(0, 0, 0, 0.1),
+    0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  --shadow-popup: 0 0 2rem rgba(0, 0, 0, 0.1),
+    0 0.375rem 0.75rem rgba(0, 0, 0, 0.2);
+
+  /* Z-Index */
+  --z-overlay: 100;
+  --z-form-actions: 200;
+  --z-floating: 500;
+  --z-fullscreen: 700;
+  --z-modal: 1000;
+  --z-message-modal: 1500;
+  --z-popup: 2000;
+  --z-popup-message: 3000;
+  --z-fixed-message: 4000;
+
+  /* Breakpoints */
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 70rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* freee vibes Focus Ring */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #2864f0, 0 0 0 4px #fff;
+}
