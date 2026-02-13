@@ -1,0 +1,8 @@
+{
+  "name": "hero-split",
+  "title": "Hero Split",
+  "description": "全幅背景 + コンテナ内2カラム（テキスト左 / ビジュアル右）",
+  "category": "hero",
+  "keywords": ["hero", "split", "landing", "2-column"],
+  "registryDependencies": ["button"]
+}

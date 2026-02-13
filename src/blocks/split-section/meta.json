@@ -1,0 +1,8 @@
+{
+  "name": "split-section",
+  "title": "Split Section",
+  "description": "テキスト + メディアの左右分割",
+  "category": "layout",
+  "keywords": ["split", "two-column", "layout", "text", "media"],
+  "registryDependencies": []
+}

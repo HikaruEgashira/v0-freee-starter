@@ -1,0 +1,252 @@
+{
+  "name": "freee-vibes",
+  "description": "freee vibes design system with layout patterns for v0",
+  "version": "0.1.0",
+  "baseUrl": "/",
+  "tokens": {
+    "file": "src/tokens.css",
+    "colors": {
+      "primary": {
+        "50": "#ebf3ff",
+        "100": "#dce8ff",
+        "200": "#aac8ff",
+        "300": "#73a5ff",
+        "400": "#2864f0",
+        "500": "#3264dc",
+        "600": "#285ac8",
+        "700": "#1e46aa",
+        "800": "#23418c",
+        "900": "#143278"
+      },
+      "sand": {
+        "50": "#f7f5f5",
+        "100": "#f0eded",
+        "200": "#e9e7e7",
+        "300": "#e1dcdc",
+        "400": "#d7d2d2",
+        "500": "#bebaba",
+        "600": "#aaa7a7",
+        "700": "#8c8989",
+        "800": "#6e6b6b",
+        "900": "#464343"
+      },
+      "gray": {
+        "50": "#fbfbfb",
+        "100": "#dcdcdc",
+        "300": "#a0a0a0",
+        "500": "#5a5a5a",
+        "700": "#323232",
+        "900": "#1e1e1e"
+      },
+      "red": {
+        "100": "#fad2d7",
+        "300": "#f07882",
+        "500": "#dc1e32",
+        "700": "#a51428",
+        "900": "#6e0f19"
+      },
+      "semantic": {
+        "background": "#ffffff",
+        "foreground": "#323232",
+        "primary": "#285ac8",
+        "primary-brand": "#2864f0",
+        "accent": "#73a5ff",
+        "alert": "#dc1e32",
+        "notice": "#be8c14",
+        "base1": "#f0eded",
+        "base2": "#e9e7e7",
+        "base3": "#8c8989",
+        "sub-text": "#6e6b6b"
+      }
+    },
+    "typography": {
+      "font-sans": "\"-apple-system\", BlinkMacSystemFont, \"Helvetica Neue\", \"ヒラギノ角ゴ ProN\", \"Hiragino Kaku Gothic ProN\", Arial, \"メイリオ\", Meiryo, sans-serif",
+      "text-sizes": {
+        "xs": "0.625rem",
+        "sm": "0.75rem",
+        "base": "0.875rem",
+        "lg": "1rem",
+        "xl": "1.5rem"
+      }
+    },
+    "spacing": {
+      "unit": "0.25rem",
+      "comment": "Base unit: 4px"
+    },
+    "radius": {
+      "xs": "0.25rem",
+      "sm": "0.5rem",
+      "md": "0.75rem",
+      "lg": "1rem",
+      "xl": "1.5rem",
+      "full": "99rem"
+    },
+    "shadows": {
+      "card": "0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.06)",
+      "floating": "0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04)",
+      "popup": "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)"
+    }
+  },
+  "components": [
+    {
+      "name": "button",
+      "title": "Button",
+      "description": "freee vibes Design System button component with multiple variants",
+      "files": [
+        "src/components/ui/button.tsx"
+      ],
+      "type": "components:ui",
+      "registryDependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ]
+    },
+    {
+      "name": "card",
+      "title": "Card",
+      "description": "freee vibes Design System card component with header, content, and footer",
+      "files": [
+        "src/components/ui/card.tsx"
+      ],
+      "type": "components:ui",
+      "registryDependencies": []
+    },
+    {
+      "name": "input",
+      "title": "Input",
+      "description": "freee vibes Design System input component with focus styles",
+      "files": [
+        "src/components/ui/input.tsx"
+      ],
+      "type": "components:ui",
+      "registryDependencies": []
+    },
+    {
+      "name": "label",
+      "title": "Label",
+      "description": "freee vibes Design System label component",
+      "files": [
+        "src/components/ui/label.tsx"
+      ],
+      "type": "components:ui",
+      "registryDependencies": []
+    }
+  ],
+  "blocks": [
+    {
+      "name": "hero-split",
+      "title": "Hero Split",
+      "description": "全幅背景 + コンテナ内2カラム（テキスト左 / ビジュアル右）",
+      "category": "hero",
+      "keywords": [
+        "hero",
+        "split",
+        "landing",
+        "2-column"
+      ],
+      "files": [
+        "src/blocks/hero-split/index.tsx"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "demo": "/src/blocks/hero-split/demo.html"
+    },
+    {
+      "name": "stats-bar",
+      "title": "Stats Bar",
+      "description": "3カラム均等グリッド（数値ハイライト）",
+      "category": "feature",
+      "keywords": [
+        "stats",
+        "metrics",
+        "numbers",
+        "grid"
+      ],
+      "files": [
+        "src/blocks/stats-bar/index.tsx"
+      ],
+      "registryDependencies": [],
+      "demo": "/src/blocks/stats-bar/demo.html"
+    },
+    {
+      "name": "card-grid",
+      "title": "Card Grid",
+      "description": "レスポンシブカードグリッド",
+      "category": "feature",
+      "keywords": [
+        "card",
+        "grid",
+        "responsive",
+        "features"
+      ],
+      "files": [
+        "src/blocks/card-grid/index.tsx"
+      ],
+      "registryDependencies": [
+        "card"
+      ],
+      "demo": "/src/blocks/card-grid/demo.html"
+    },
+    {
+      "name": "split-section",
+      "title": "Split Section",
+      "description": "テキスト + メディアの左右分割",
+      "category": "layout",
+      "keywords": [
+        "split",
+        "two-column",
+        "layout",
+        "text",
+        "media"
+      ],
+      "files": [
+        "src/blocks/split-section/index.tsx"
+      ],
+      "registryDependencies": [],
+      "demo": "/src/blocks/split-section/demo.html"
+    },
+    {
+      "name": "cta-banner",
+      "title": "CTA Banner",
+      "description": "全幅カラー背景 + 中央寄せテキスト + ボタン群",
+      "category": "cta",
+      "keywords": [
+        "cta",
+        "banner",
+        "call-to-action",
+        "hero"
+      ],
+      "files": [
+        "src/blocks/cta-banner/index.tsx"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "demo": "/src/blocks/cta-banner/demo.html"
+    },
+    {
+      "name": "form-layout",
+      "title": "Form Layout",
+      "description": "ラベル + インプットの縦積み、max-w-lg 制約",
+      "category": "form",
+      "keywords": [
+        "form",
+        "layout",
+        "input",
+        "label"
+      ],
+      "files": [
+        "src/blocks/form-layout/index.tsx"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ],
+      "demo": "/src/blocks/form-layout/demo.html"
+    }
+  ]
+}

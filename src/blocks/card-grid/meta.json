@@ -1,0 +1,8 @@
+{
+  "name": "card-grid",
+  "title": "Card Grid",
+  "description": "レスポンシブカードグリッド",
+  "category": "feature",
+  "keywords": ["card", "grid", "responsive", "features"],
+  "registryDependencies": ["card"]
+}

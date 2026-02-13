@@ -1,0 +1,8 @@
+{
+  "name": "stats-bar",
+  "title": "Stats Bar",
+  "description": "3カラム均等グリッド（数値ハイライト）",
+  "category": "feature",
+  "keywords": ["stats", "metrics", "numbers", "grid"],
+  "registryDependencies": []
+}

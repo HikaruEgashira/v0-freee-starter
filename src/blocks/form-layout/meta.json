@@ -1,0 +1,8 @@
+{
+  "name": "form-layout",
+  "title": "Form Layout",
+  "description": "ラベル + インプットの縦積み、max-w-lg 制約",
+  "category": "form",
+  "keywords": ["form", "layout", "input", "label"],
+  "registryDependencies": ["button", "input", "label"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "cta-banner",
+  "title": "CTA Banner",
+  "description": "全幅カラー背景 + 中央寄せテキスト + ボタン群",
+  "category": "cta",
+  "keywords": ["cta", "banner", "call-to-action", "hero"],
+  "registryDependencies": ["button"]
+}
