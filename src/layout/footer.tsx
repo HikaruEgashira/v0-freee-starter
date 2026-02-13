@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "wouter";
 
 const productLinks = [
   { label: "freee会計", href: "/accounting" },
