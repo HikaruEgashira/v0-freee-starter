@@ -1,9 +1,9 @@
 import Link from "next/link"
-import registry from "../../../registry.json"
+import { getBlocks, getUIPrimitives } from "@/lib/registry"
 
 export default function Home() {
-  const blocks = registry.items.filter((item) => item.type === "registry:block")
-  const components = registry.items.filter((item) => item.type === "registry:ui")
+  const blocks = getBlocks()
+  const components = getUIPrimitives()
 
   return (
     <div className="min-h-screen bg-background">
