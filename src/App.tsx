@@ -6,10 +6,10 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>freee Design Philosophy</title>
+        <title>ACME Design System</title>
         <meta
           name="description"
-          content="freeeのデザイン哲学"
+          content="ACME Design System"
         />
       </Helmet>
       <main>
