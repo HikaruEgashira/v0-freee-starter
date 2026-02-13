@@ -1,6 +1,6 @@
 {
-  "name": "freee-vibes",
-  "description": "freee vibes design system with layout patterns for v0",
+  "name": "v0-freee-starter",
+  "description": "freee-like vibes design system with layout patterns for v0",
   "version": "0.1.0",
   "baseUrl": "/",
   "tokens": {
@@ -91,7 +91,7 @@
     {
       "name": "button",
       "title": "Button",
-      "description": "freee vibes Design System button component with multiple variants",
+      "description": "freee-like vibes Design System button component with multiple variants",
       "files": [
         "src/components/ui/button.tsx"
       ],
@@ -106,7 +106,7 @@
     {
       "name": "card",
       "title": "Card",
-      "description": "freee vibes Design System card component with header, content, and footer",
+      "description": "freee-like vibes Design System card component with header, content, and footer",
       "files": [
         "src/components/ui/card.tsx"
       ],
@@ -116,7 +116,7 @@
     {
       "name": "input",
       "title": "Input",
-      "description": "freee vibes Design System input component with focus styles",
+      "description": "freee-like vibes Design System input component with focus styles",
       "files": [
         "src/components/ui/input.tsx"
       ],
@@ -126,7 +126,7 @@
     {
       "name": "label",
       "title": "Label",
-      "description": "freee vibes Design System label component",
+      "description": "freee-like vibes Design System label component",
       "files": [
         "src/components/ui/label.tsx"
       ],
