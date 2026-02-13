@@ -22,6 +22,9 @@ export function Footer() {
             <p className="mt-3 text-sm leading-relaxed">
               スモールビジネスを、世界の主役に。
             </p>
+            <p className="mt-3 text-sm leading-relaxed">
+              このサイトは非公式のデモサイトです。
+            </p>
           </div>
           <div>
             <h4 className="mb-3 text-base font-bold text-white">
