@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <footer className="border-t border-base2 bg-sand-900 text-sand-300">
       <div className="mx-auto max-w-[70rem] px-6 py-12">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-3">
           <div>
             <span className="text-xl font-bold text-white">freee</span>
             <p className="mt-3 text-sm leading-relaxed">
@@ -54,16 +54,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h4 className="mb-3 text-base font-bold text-white">会社情報</h4>
-            <p className="text-sm leading-relaxed text-sand-400">
-              フリー株式会社
-              <br />
-              東京都品川区大崎1-2-2
-              <br />
-              アートヴィレッジ大崎セントラルタワー 21階
-            </p>
           </div>
         </div>
         <div className="mt-10 border-t border-sand-700 pt-6 text-center text-sm text-sand-500">
