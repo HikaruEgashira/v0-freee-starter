@@ -76,7 +76,6 @@ export default function HomePage() {
         />
       </Helmet>
 
-      {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 md:py-28">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="max-w-2xl">
@@ -110,7 +109,6 @@ export default function HomePage() {
         <div className="absolute -right-10 top-1/3 hidden h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-primary-200/30 md:block" />
       </section>
 
-      {/* Stats */}
       <section className="border-b border-base2 bg-background py-12">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid gap-8 md:grid-cols-3">
@@ -129,7 +127,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Target Segments */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -145,7 +142,7 @@ export default function HomePage() {
               <Link
                 key={solution.title}
                 href={solution.href}
-                className="group rounded-md bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
+                className="group rounded-md border border-base1 bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
               >
                 <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
                   {solution.title}
@@ -160,7 +157,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Products */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -176,7 +172,7 @@ export default function HomePage() {
               <Link
                 key={product.name}
                 href={product.href}
-                className="group overflow-hidden rounded-lg bg-background shadow-card transition-shadow hover:shadow-floating"
+                className="group overflow-hidden rounded-lg border border-base1 bg-background shadow-card transition-shadow hover:shadow-floating"
               >
                 <div className={`${product.color} p-8 text-center`}>
                   <span className="text-[3rem]">{product.icon}</span>
@@ -209,7 +205,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* For Individual */}
       <section className="bg-gradient-to-r from-primary-50 to-green-100 py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-8 md:grid-cols-2">
@@ -234,7 +229,7 @@ export default function HomePage() {
                 </button>
               </div>
             </div>
-            <div className="rounded-lg bg-background p-8 shadow-card">
+            <div className="rounded-lg border border-base1 bg-background p-8 shadow-card">
               <blockquote className="border-l-4 border-primary-brand pl-4">
                 <p className="mb-4 text-base italic leading-relaxed text-foreground">
                   「締め作業はほぼゼロに、freee会計導入後は家族と過ごす幸せな時間が増えました。」
@@ -248,7 +243,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* News */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <h2 className="mb-8 text-xl font-bold text-foreground">お知らせ</h2>

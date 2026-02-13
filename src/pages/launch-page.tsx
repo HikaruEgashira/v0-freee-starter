@@ -80,7 +80,6 @@ export default function LaunchPage() {
         />
       </Helmet>
 
-      {/* Hero */}
       <section className="bg-gradient-to-br from-orange-100 via-white to-yellow-100 py-20">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -124,7 +123,6 @@ export default function LaunchPage() {
         </div>
       </section>
 
-      {/* Steps */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -159,7 +157,6 @@ export default function LaunchPage() {
         </div>
       </section>
 
-      {/* Merits */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -171,7 +168,7 @@ export default function LaunchPage() {
             {merits.map((merit) => (
               <div
                 key={merit.title}
-                className="rounded-lg bg-background p-6 shadow-card"
+                className="rounded-lg border border-base1 bg-background p-6 shadow-card"
               >
                 <span className="mb-3 inline-block text-[2rem]">
                   {merit.icon}
@@ -196,7 +193,6 @@ export default function LaunchPage() {
         </div>
       </section>
 
-      {/* Documents */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -228,7 +224,7 @@ export default function LaunchPage() {
                 {requiredDocs.map((doc, i) => (
                   <div
                     key={doc}
-                    className="flex items-center gap-3 rounded-md bg-background p-3 shadow-card"
+                    className="flex items-center gap-3 rounded-md border border-base1 bg-background p-3 shadow-card"
                     style={{ opacity: 1 - i * 0.1 }}
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-orange-100 text-sm text-orange-700">
@@ -244,7 +240,6 @@ export default function LaunchPage() {
         </div>
       </section>
 
-      {/* Comparison */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -253,7 +248,7 @@ export default function LaunchPage() {
             </h2>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full rounded-lg bg-background shadow-card">
+            <table className="w-full rounded-lg border border-base1 bg-background shadow-card">
               <thead>
                 <tr className="border-b border-base2">
                   <th className="px-6 py-4 text-left text-base font-bold text-foreground">
@@ -287,7 +282,6 @@ export default function LaunchPage() {
         </div>
       </section>
 
-      {/* After Setup */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -321,7 +315,7 @@ export default function LaunchPage() {
             ].map((product) => (
               <div
                 key={product.name}
-                className={`rounded-lg border-l-4 bg-background p-6 shadow-card ${product.color}`}
+                className={`rounded-lg border border-base1 border-l-4 bg-background p-6 shadow-card ${product.color}`}
               >
                 <h3 className="mb-2 text-lg font-bold text-foreground">
                   {product.name}

@@ -82,7 +82,6 @@ export default function AccountingPage() {
         />
       </Helmet>
 
-      {/* Hero */}
       <section className="bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -111,12 +110,12 @@ export default function AccountingPage() {
               </p>
             </div>
             <div className="flex gap-6">
-              <div className="flex flex-col items-center rounded-lg bg-background p-6 shadow-card">
+              <div className="flex flex-col items-center rounded-lg border border-base1 bg-background p-6 shadow-card">
                 <p className="text-sm text-sub-text">クラウド会計ソフト市場</p>
                 <p className="text-lg font-bold text-foreground">シェア</p>
                 <p className="text-[2.5rem] font-bold text-primary">No.1</p>
               </div>
-              <div className="flex flex-col items-center rounded-lg bg-background p-6 shadow-card">
+              <div className="flex flex-col items-center rounded-lg border border-base1 bg-background p-6 shadow-card">
                 <p className="text-sm text-sub-text">有料課金ユーザー</p>
                 <p className="text-lg font-bold text-foreground">企業数</p>
                 <p className="text-[2.5rem] font-bold text-primary">62万</p>
@@ -126,7 +125,6 @@ export default function AccountingPage() {
         </div>
       </section>
 
-      {/* Plans */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-8 text-center">
@@ -142,7 +140,7 @@ export default function AccountingPage() {
             {plans.map((plan) => (
               <button
                 key={plan.name}
-                className="group rounded-lg bg-background p-6 text-left shadow-card transition-all hover:shadow-floating hover:ring-2 hover:ring-primary"
+                className="group rounded-lg border border-base1 bg-background p-6 text-left shadow-card transition-all hover:shadow-floating hover:ring-2 hover:ring-primary"
               >
                 <span className="mb-2 inline-block rounded-full bg-primary-50 px-3 py-1 text-sm font-bold text-primary">
                   {plan.badge}
@@ -157,7 +155,6 @@ export default function AccountingPage() {
         </div>
       </section>
 
-      {/* Features */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -209,7 +206,6 @@ export default function AccountingPage() {
         </div>
       </section>
 
-      {/* Trust */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -218,7 +214,7 @@ export default function AccountingPage() {
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-lg bg-background p-8 text-center shadow-card">
+            <div className="rounded-lg border border-base1 bg-background p-8 text-center shadow-card">
               <p className="text-sm text-sub-text">クラウド会計ソフト</p>
               <p className="text-lg font-bold text-foreground">国内シェア</p>
               <p className="text-[3rem] font-bold text-primary">No.1</p>
@@ -226,12 +222,12 @@ export default function AccountingPage() {
                 56.3%
               </p>
             </div>
-            <div className="rounded-lg bg-background p-8 text-center shadow-card">
+            <div className="rounded-lg border border-base1 bg-background p-8 text-center shadow-card">
               <p className="text-sm text-sub-text">導入事業所数</p>
               <p className="text-[3rem] font-bold text-primary">62万</p>
               <p className="text-base text-sub-text">事業所</p>
             </div>
-            <div className="rounded-lg bg-background p-8 text-center shadow-card">
+            <div className="rounded-lg border border-base1 bg-background p-8 text-center shadow-card">
               <p className="text-sm text-sub-text">金融機関との連携社数</p>
               <p className="text-[3rem] font-bold text-primary">1,043</p>
               <p className="text-base text-sub-text">社</p>
@@ -240,7 +236,6 @@ export default function AccountingPage() {
         </div>
       </section>
 
-      {/* Security */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -287,7 +282,6 @@ export default function AccountingPage() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <h2 className="mb-8 text-center text-xl font-bold text-foreground">
@@ -297,7 +291,7 @@ export default function AccountingPage() {
             {faqs.map((faq) => (
               <details
                 key={faq.q}
-                className="group rounded-md bg-background shadow-card"
+                className="group rounded-md border border-base1 bg-background shadow-card"
               >
                 <summary className="cursor-pointer list-none px-6 py-4 text-base font-bold text-foreground">
                   <span className="flex items-center justify-between">

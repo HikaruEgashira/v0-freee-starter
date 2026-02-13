@@ -70,7 +70,6 @@ export default function HrPage() {
         />
       </Helmet>
 
-      {/* Hero */}
       <section className="bg-gradient-to-br from-green-100 via-white to-teal-100 py-20">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -132,7 +131,6 @@ export default function HrPage() {
         </div>
       </section>
 
-      {/* Pain Points */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -165,7 +163,6 @@ export default function HrPage() {
         </div>
       </section>
 
-      {/* Features */}
       <section className="bg-column py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
@@ -180,7 +177,7 @@ export default function HrPage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="rounded-lg bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
+                className="rounded-lg border border-base1 bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
               >
                 <span className="mb-3 inline-block text-[2rem]">
                   {feature.icon}
@@ -197,7 +194,6 @@ export default function HrPage() {
         </div>
       </section>
 
-      {/* Integration */}
       <section className="bg-background py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
@@ -254,14 +250,13 @@ export default function HrPage() {
         </div>
       </section>
 
-      {/* Testimonial */}
       <section className="bg-green-100 py-16">
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="mb-8 text-xl font-bold text-foreground">
               お客さまの声
             </h2>
-            <div className="rounded-lg bg-background p-8 shadow-card">
+            <div className="rounded-lg border border-base1 bg-background p-8 shadow-card">
               <p className="mb-6 text-lg leading-relaxed text-foreground">
                 「freee人事労務の導入で、給与計算にかかる時間が
                 <span className="font-bold text-green-700">3分の1</span>
