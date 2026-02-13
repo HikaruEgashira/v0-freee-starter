@@ -1,67 +1,63 @@
 import { Helmet } from "@dr.pogodin/react-helmet";
-import { Link } from "wouter";
 import { CtaSection } from "@/components/cta-section";
 
-const products = [
+const principles = [
   {
-    name: "freee会計",
-    href: "/accounting",
-    category: "経理・財務",
+    name: "アクセシブル",
+    category: "Accessible",
     description:
-      "請求・支払業務から会計帳簿・決算書の作成、経営管理まで。経理をスムーズに行える会計ソフト。",
+      "すべての人が使えるデザイン。年齢、性別、障がいの有無に関わらず、誰もが快適に使える。",
     color: "bg-primary-400",
-    icon: "📊",
+    icon: "♿",
   },
   {
-    name: "freee人事労務",
-    href: "/hr",
-    category: "人事労務",
+    name: "シンプル",
+    category: "Simple",
     description:
-      "給与計算や労務管理を大幅に効率化。給与明細や年末調整、入社手続きから勤怠管理まで。",
+      "複雑な業務をシンプルに。必要な機能だけを、わかりやすく提供する。",
     color: "bg-green-500",
-    icon: "👥",
+    icon: "✨",
   },
   {
-    name: "freee会社設立",
-    href: "/launch",
-    category: "起業・会社設立",
+    name: "直感的",
+    category: "Intuitive",
     description:
-      "会社設立に必要な書類を無料で一括作成。設立コストを大幅に削減。",
+      "考えなくても使える。ユーザーの期待に沿った動作で、迷わず操作できる。",
     color: "bg-orange-500",
-    icon: "🏢",
+    icon: "💡",
   },
 ];
 
 const stats = [
-  { value: "62万", label: "有料課金ユーザー企業数", note: "※2025年3月末時点" },
+  { value: "4つ", label: "デザイン原則", note: "※アクセシブル、シンプル、直感的、一貫性" },
   {
-    value: "No.1",
-    label: "クラウド会計ソフト市場シェア",
-    note: "※リードプラス調べ",
+    value: "3つ",
+    label: "コアバリュー",
+    note: "※ユーザーファースト、スピード、透明性",
   },
-  { value: "1,043社", label: "金融機関との連携社数", note: "※2023年6月末時点" },
+  { value: "∞", label: "可能性", note: "※すべての人に開かれたデザイン" },
 ];
 
-const solutions = [
+const applications = [
   {
-    title: "経理・財務",
-    description: "自分で決算、経営状況を見える化したい",
-    href: "/accounting",
+    title: "誰もが使える",
+    description: "専門知識がなくても、直感的に操作できる",
+    href: "#",
   },
   {
-    title: "人事労務",
-    description: "紙から解放されて、労務管理を正しく行いたい",
-    href: "/hr",
+    title: "ミスを防ぐ",
+    description: "適切なガイドで、正確に処理できる",
+    href: "#",
   },
   {
-    title: "起業・会社設立",
-    description: "コストを抑えつつ、自分でミスなく会社設立したい",
-    href: "/launch",
+    title: "集中できる",
+    description: "煩雑な作業から解放され、本来の仕事に専念",
+    href: "#",
   },
   {
-    title: "確定申告",
-    description: "はじめてでもカンタンに確定申告を完了させたい",
-    href: "/accounting",
+    title: "学習不要",
+    description: "一貫したUIで、学習コストを最小限に",
+    href: "#",
   },
 ];
 
@@ -69,10 +65,10 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>freee - すべてのスモールビジネスを支える統合型経営プラットフォーム</title>
+        <title>freee Design Philosophy</title>
         <meta
           name="description"
-          content="freeeは、従来バラバラに存在していた業務やデータを、フロントオフィスからバックオフィスまで一気通貫させ、スモールビジネスが専門家や取引先とつながるプラットフォームです。"
+          content="すべての人が使えるデザイン。freeeは、複雑な業務をシンプルにし、誰もが使いやすいプロダクトを創ります。"
         />
       </Helmet>
 
@@ -80,24 +76,24 @@ export default function HomePage() {
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="max-w-2xl">
             <p className="mb-4 text-base font-bold text-primary">
-              統合型経営プラットフォーム
+              Design Philosophy
             </p>
             <h1 className="mb-6 text-[2.5rem] font-bold leading-tight text-foreground md:text-[3rem]">
-              すべての
-              <br />
               スモールビジネスを
               <br />
-              <span className="text-primary">支える。</span>
+              世界の主役に。
+              <br />
+              <span className="text-primary">デザインで実現する。</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-sub-text">
-              freeeは、従来バラバラに存在していた業務やデータを、フロントオフィスからバックオフィスまで一気通貫させ、スモールビジネスが専門家や取引先とつながるプラットフォームです。
+              freeeは、複雑な業務をシンプルにし、誰もが使いやすいプロダクトを創ります。専門知識がなくても、直感的に操作できる。それが、freeeのデザイン哲学です。
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <button className="h-12 rounded-sm bg-primary px-8 text-lg font-bold text-white transition-colors hover:bg-primary-800">
-                無料で始める
+                デザインを体験する
               </button>
               <button className="h-12 rounded-sm border border-primary bg-background px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
-                製品一覧はこちら
+                哲学を知る
               </button>
             </div>
             <p className="mt-4 text-sm text-sub-text">
@@ -131,27 +127,27 @@ export default function HomePage() {
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
             <h2 className="mb-2 text-xl font-bold text-foreground">
-              お客さまの課題に合わせたソリューション
+              デザインがもたらす体験
             </h2>
             <p className="text-base text-sub-text">
-              freeeではさまざまなバックオフィス領域の課題解決への手段を紹介しています
+              freeeのデザイン哲学が実現する、4つの価値
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {solutions.map((solution) => (
-              <Link
-                key={solution.title}
-                href={solution.href}
+            {applications.map((app) => (
+              <a
+                key={app.title}
+                href={app.href}
                 className="group rounded-md border border-base1 bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
               >
                 <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
-                  {solution.title}
+                  {app.title}
                 </h3>
-                <p className="text-sm text-sub-text">{solution.description}</p>
+                <p className="text-sm text-sub-text">{app.description}</p>
                 <span className="mt-4 inline-block text-sm font-bold text-link">
                   詳しく見る →
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -161,46 +157,48 @@ export default function HomePage() {
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
             <p className="mb-2 text-base font-bold text-primary">
-              製品・サービス
+              Design Principles
             </p>
             <h2 className="mb-2 text-xl font-bold text-foreground">
-              freeeなら最適なサービスに出会える
+              3つのデザイン原則
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {products.map((product) => (
-              <Link
-                key={product.name}
-                href={product.href}
+            {principles.map((principle) => (
+              <a
+                key={principle.name}
+                href="#"
                 className="group overflow-hidden rounded-lg border border-base1 bg-background shadow-card transition-shadow hover:shadow-floating"
               >
-                <div className={`${product.color} p-8 text-center`}>
-                  <span className="text-[3rem]">{product.icon}</span>
+                <div className={`${principle.color} p-8 text-center`}>
+                  <span className="text-[3rem]">{principle.icon}</span>
                 </div>
                 <div className="p-6">
                   <p className="mb-1 text-sm font-bold text-primary">
-                    {product.category}
+                    {principle.category}
                   </p>
                   <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
-                    {product.name}
+                    {principle.name}
                   </h3>
                   <p className="text-sm leading-relaxed text-sub-text">
-                    {product.description}
+                    {principle.description}
                   </p>
                   <span className="mt-4 inline-block text-sm font-bold text-link">
                     もっと知る →
                   </span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link
-              href="#"
+            <a
+              href="https://brand.freee.co.jp/designphilosophy/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-base font-bold text-link hover:underline"
             >
-              すべての製品・サービスをみる →
-            </Link>
+              すべてのデザイン原則をみる →
+            </a>
           </div>
         </div>
       </section>
@@ -210,32 +208,32 @@ export default function HomePage() {
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
               <p className="mb-2 text-base font-bold text-primary">
-                個人事業主・副業のお客さまへ
+                ユーザーファースト
               </p>
               <h2 className="mb-4 text-xl font-bold leading-snug text-foreground">
-                好きなことをする時間を
+                本来やるべき仕事に
                 <br />
-                大切にして欲しいから。
+                集中できる未来を。
               </h2>
               <p className="mb-6 text-base leading-relaxed text-sub-text">
-                freeeは、フリーランスの皆さまを煩わしさから解放し、もっと自由にビジネスができる環境を提供しています。
+                freeeは、煩雑な業務から解放し、もっと自由にビジネスができる環境を提供します。すべての判断の中心にユーザーを置き、本質的な価値を届けます。
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <button className="h-10 rounded-sm bg-primary px-6 text-base font-bold text-white transition-colors hover:bg-primary-800">
-                  freee会計で確定申告をはじめる
+                  デザインの実例を見る
                 </button>
                 <button className="h-10 rounded-sm border border-primary bg-background px-6 text-base font-bold text-primary transition-colors hover:bg-primary-50">
-                  個人向け製品をみる
+                  ブランドサイトへ
                 </button>
               </div>
             </div>
             <div className="rounded-lg border border-base1 bg-background p-8 shadow-card">
               <blockquote className="border-l-4 border-primary-brand pl-4">
                 <p className="mb-4 text-base italic leading-relaxed text-foreground">
-                  「締め作業はほぼゼロに、freee会計導入後は家族と過ごす幸せな時間が増えました。」
+                  「直感的に使えるから、マニュアルいらず。本来の仕事に集中できる時間が増えました。」
                 </p>
                 <footer className="text-sm text-sub-text">
-                  宿泊・旅行サービス業 | ひといき荘アウトドアサービス 藤井様
+                  デザインチーム
                 </footer>
               </blockquote>
             </div>
@@ -263,7 +261,7 @@ export default function HomePage() {
                   "2026年確定申告時期におけるサポートデスクの営業日時について",
               },
             ].map((news) => (
-              <Link
+              <a
                 key={news.title}
                 href="#"
                 className="group flex items-start gap-4 border-b border-base1 pb-4 last:border-b-0"
@@ -274,7 +272,7 @@ export default function HomePage() {
                 <span className="text-base text-foreground group-hover:text-link">
                   {news.title}
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
