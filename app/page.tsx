@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CtaSection } from "@/components/cta-section";
+import { CtaSection } from "@/examples/cta-section";
 
 const products = [
   {
