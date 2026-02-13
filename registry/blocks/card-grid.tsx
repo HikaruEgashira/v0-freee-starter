@@ -29,8 +29,8 @@ export function CardGrid({
         <h2 className="mb-2 text-lg font-bold text-foreground">{title}</h2>
         <p className="mb-8 text-base text-muted-foreground">{subtitle}</p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {cards.map((card) => (
-            <Card key={card.title}>
+          {cards.map((card, index) => (
+            <Card key={`${card.title}-${index}`}>
               <CardHeader>
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-50">
                   <div className="h-5 w-5 rounded bg-primary-300" />
