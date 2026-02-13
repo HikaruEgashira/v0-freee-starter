@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "./_layout/footer";
+import { DemoBanner } from "./_layout/demo-banner";
 
 export const metadata: Metadata = {
   title: "freee | 統合型経営プラットフォーム",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="antialiased">
+        <DemoBanner />
         {children}
         <Footer />
       </body>
