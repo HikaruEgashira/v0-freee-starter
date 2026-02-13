@@ -1,6 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "theme",
+  "title": "Theme",
   "description": "freee brand color theme",
   "cssVars": {
     "light": {

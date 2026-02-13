@@ -3,7 +3,7 @@ import registry from "../../registry.json"
 export interface Component {
   name: string
   type: string
-  title: string
+  title?: string
   description?: string
   files?: { path: string; type: string; target: string }[]
   dependencies?: string[]
@@ -19,16 +19,4 @@ export function getRegistryItems(): Component[] {
 
 export function getRegistryItem(name: string): Component | undefined {
   return getRegistryItems().find((item) => item.name === name)
-}
-
-export function getBlocks() {
-  return getRegistryItems()
-    .filter((item) => item.type === "registry:block")
-    .sort((a, b) => a.title.localeCompare(b.title))
-}
-
-export function getUIPrimitives() {
-  return getRegistryItems()
-    .filter((item) => item.type === "registry:ui")
-    .sort((a, b) => a.title.localeCompare(b.title))
 }

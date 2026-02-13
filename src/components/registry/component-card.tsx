@@ -14,7 +14,7 @@ export function ComponentCard({
 }: {
   name: string
   type: string
-  title: string
+  title?: string
   description?: string
 }) {
   const registryUrl = `${BASE_URL}/r/${name}.json`

@@ -1,32 +1,8 @@
 # freee Starter Registry
 
-[![Open in v0](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/hero-split.json)
+freee ブランドデザイントークンを提供する [shadcn/ui registry](https://ui.shadcn.com/docs/registry) テンプレート。
 
-freee ブランドデザイントークンを組み込んだ [shadcn/ui registry](https://ui.shadcn.com/docs/registry)。`npx shadcn add` でコンポーネントをインストールできます。
-
-## Registry
-
-### UI Components
-
-| Component | Install |
-|-----------|---------|
-| Button | `npx shadcn add https://v0-freee-starter.vercel.app/r/button.json` |
-| Card | `npx shadcn add https://v0-freee-starter.vercel.app/r/card.json` |
-| Input | `npx shadcn add https://v0-freee-starter.vercel.app/r/input.json` |
-| Label | `npx shadcn add https://v0-freee-starter.vercel.app/r/label.json` |
-
-### Blocks
-
-| Block | Install | Open in v0 |
-|-------|---------|------------|
-| Hero Split | `npx shadcn add https://v0-freee-starter.vercel.app/r/hero-split.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/hero-split.json) |
-| Stats Bar | `npx shadcn add https://v0-freee-starter.vercel.app/r/stats-bar.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/stats-bar.json) |
-| Card Grid | `npx shadcn add https://v0-freee-starter.vercel.app/r/card-grid.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/card-grid.json) |
-| Split Section | `npx shadcn add https://v0-freee-starter.vercel.app/r/split-section.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/split-section.json) |
-| CTA Banner | `npx shadcn add https://v0-freee-starter.vercel.app/r/cta-banner.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/cta-banner.json) |
-| Form Layout | `npx shadcn add https://v0-freee-starter.vercel.app/r/form-layout.json` | [![Open](https://v0.dev/chat/api/badge)](https://v0.dev/chat/api/open?url=https://v0-freee-starter.vercel.app/r/form-layout.json) |
-
-### Theme
+## Install
 
 ```bash
 npx shadcn add https://v0-freee-starter.vercel.app/r/theme.json
