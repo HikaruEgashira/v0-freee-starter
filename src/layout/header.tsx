@@ -1,7 +1,4 @@
-"use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, useLocation } from "wouter";
 
 const navItems = [
   { href: "/", label: "トップ" },
@@ -11,7 +8,7 @@ const navItems = [
 ];
 
 export function Header() {
-  const pathname = usePathname();
+  const [location] = useLocation();
 
   return (
     <header className="sticky top-0 z-[var(--z-floating)] border-b border-base2 bg-background">
@@ -25,7 +22,7 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={`rounded-sm px-3 py-2 text-base transition-colors ${
-                pathname === item.href
+                location === item.href
                   ? "bg-primary-50 font-bold text-primary"
                   : "text-foreground hover:bg-primary-50 hover:text-primary"
               }`}

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { Helmet } from "@dr.pogodin/react-helmet";
+import { Link } from "wouter";
 import { CtaSection } from "@/components/cta-section";
 
 const products = [
@@ -64,9 +65,17 @@ const solutions = [
   },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>freee - すべてのスモールビジネスを支える統合型経営プラットフォーム</title>
+        <meta
+          name="description"
+          content="freeeは、従来バラバラに存在していた業務やデータを、フロントオフィスからバックオフィスまで一気通貫させ、スモールビジネスが専門家や取引先とつながるプラットフォームです。"
+        />
+      </Helmet>
+
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 md:py-28">
         <div className="mx-auto max-w-[70rem] px-6">
