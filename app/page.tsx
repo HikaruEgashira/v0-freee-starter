@@ -1,14 +1,24 @@
 import Link from "next/link";
+import { BarChart3, Users, Building2, type LucideIcon } from "lucide-react";
 
-const products = [
+const products: {
+  name: string;
+  href: string;
+  category: string;
+  description: string;
+  color: string;
+  iconColor: string;
+  icon: LucideIcon;
+}[] = [
   {
     name: "ACME会計",
     href: "/accounting",
     category: "経理・財務",
     description:
       "請求・支払業務から会計帳簿・決算書の作成、経営管理まで。経理をスムーズに行える会計ソフト。",
-    color: "bg-primary-100",
-    icon: "📊",
+    color: "bg-primary-50",
+    iconColor: "text-primary-600",
+    icon: BarChart3,
   },
   {
     name: "ACME労務",
@@ -16,8 +26,9 @@ const products = [
     category: "人事労務",
     description:
       "給与計算や労務管理を大幅に効率化。給与明細や年末調整、入社手続きから勤怠管理まで。",
-    color: "bg-green-100",
-    icon: "👥",
+    color: "bg-teal-100",
+    iconColor: "text-teal-700",
+    icon: Users,
   },
   {
     name: "ACME起業",
@@ -26,7 +37,8 @@ const products = [
     description:
       "会社設立に必要な書類を無料で一括作成。設立コストを大幅に削減。",
     color: "bg-orange-100",
-    icon: "🏢",
+    iconColor: "text-orange-700",
+    icon: Building2,
   },
 ];
 
@@ -47,7 +59,6 @@ const segments = [
       "経理・労務・経営分析をひとつに統合。バラバラだったシステムをまとめ、経営判断に集中できる環境を。",
     products: ["ACME会計", "ACME労務"],
     href: "/accounting",
-    icon: "🏗️",
   },
   {
     title: "バックオフィス担当者",
@@ -55,7 +66,6 @@ const segments = [
       "手作業の入力・転記をゼロに。請求書処理から給与計算まで自動化し、月次決算を最短で。",
     products: ["ACME会計", "ACME労務"],
     href: "/hr",
-    icon: "⚙️",
   },
   {
     title: "フリーランス・個人事業主",
@@ -63,7 +73,6 @@ const segments = [
       "確定申告も請求書も最小限の手間で完了。本業に集中できる時間を取り戻す。",
     products: ["ACME会計"],
     href: "/accounting",
-    icon: "💻",
   },
   {
     title: "スタートアップ創業者",
@@ -71,7 +80,6 @@ const segments = [
       "会社設立から経理体制の構築まで一気通貫。成長フェーズに合わせて機能を拡張。",
     products: ["ACME起業", "ACME会計"],
     href: "/launch",
-    icon: "🚀",
   },
 ];
 
@@ -149,7 +157,6 @@ export default function Home() {
                 href={segment.href}
                 className="group rounded-md border border-base2 bg-background p-6 transition-colors hover:border-primary/30 hover:bg-primary-50/30"
               >
-                <span className="mb-3 block text-2xl">{segment.icon}</span>
                 <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
                   {segment.title}
                 </h3>
@@ -186,8 +193,8 @@ export default function Home() {
                 href={product.href}
                 className="group overflow-hidden rounded-lg border border-base2 bg-background transition-colors hover:border-primary/30"
               >
-                <div className={`${product.color} p-8 text-center`}>
-                  <span className="text-[3rem]">{product.icon}</span>
+                <div className={`${product.color} flex items-center justify-center p-8`}>
+                  <product.icon className={`h-12 w-12 ${product.iconColor}`} />
                 </div>
                 <div className="p-6">
                   <p className="mb-1 text-sm font-bold text-primary">
