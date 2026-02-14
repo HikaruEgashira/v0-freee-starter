@@ -1,5 +1,7 @@
 # v0-freee-starter
 
+[![Open in v0](https://v0-freee-starter.vercel.app/open-in-v0.svg)](https://v0.dev/chat/api/open?title=ACME+Dashboard&prompt=These+are+existing+design+system+styles+and+files.+Please+utilize+them+alongside+base+components+to+build.&url=https%3A%2F%2Fv0-freee-starter.vercel.app%2Fr%2Fdashboard.json)
+
 [v0-starter-template](https://github.com/vercel/v0-starter-template) をベースに、[freee vibes](https://vibes.freee.co.jp/) デザインシステムのトークンを Tailwind CSS 4 に統合したスターターテンプレートです。
 
 ## Design Tokens
