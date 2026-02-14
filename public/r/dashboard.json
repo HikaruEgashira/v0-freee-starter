@@ -9,7 +9,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "/r/theme.json"
+    "https://v0-freee-starter.vercel.app/r/theme.json"
   ],
   "files": [
     {
