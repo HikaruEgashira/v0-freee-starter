@@ -104,10 +104,10 @@ export default function Home() {
               ACMEは、バラバラだった業務システムを統合し、中小企業の生産性を最大化するクラウドプラットフォームです。
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <button className="h-12 rounded-sm bg-primary px-8 text-lg font-bold text-white transition-colors hover:bg-primary-800">
+              <button type="button" className="h-12 rounded-sm bg-primary px-8 text-lg font-bold text-white transition-colors hover:bg-primary-800">
                 無料トライアル
               </button>
-              <button className="h-12 rounded-sm border border-primary bg-background px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
+              <button type="button" className="h-12 rounded-sm border border-primary bg-background px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
                 機能を見る
               </button>
             </div>
@@ -116,8 +116,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="absolute -right-20 top-1/2 hidden h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-primary-100/50 md:block" />
-        <div className="absolute -right-10 top-1/3 hidden h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-primary-200/30 md:block" />
+        <div aria-hidden="true" className="absolute -right-20 top-1/2 hidden h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-primary-100/50 md:block" />
+        <div aria-hidden="true" className="absolute -right-10 top-1/3 hidden h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-primary-200/30 md:block" />
       </section>
 
       {/* Stats */}
@@ -194,7 +194,7 @@ export default function Home() {
                 className="group overflow-hidden rounded-lg border border-base2 bg-background transition-colors hover:border-primary/30"
               >
                 <div className={`${product.color} flex items-center justify-center p-8`}>
-                  <product.icon className={`h-12 w-12 ${product.iconColor}`} />
+                  <product.icon className={`h-12 w-12 ${product.iconColor}`} aria-hidden="true" />
                 </div>
                 <div className="p-6">
                   <p className="mb-1 text-sm font-bold text-primary">
@@ -241,10 +241,10 @@ export default function Home() {
                 ACMEは、フリーランスの方々が事務作業から解放され、本来の仕事に集中できる環境を提供します。
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <button className="h-10 rounded-sm bg-primary px-6 text-base font-bold text-white transition-colors hover:bg-primary-800">
+                <button type="button" className="h-10 rounded-sm bg-primary px-6 text-base font-bold text-white transition-colors hover:bg-primary-800">
                   ACME会計で確定申告
                 </button>
-                <button className="h-10 rounded-sm border border-primary bg-background px-6 text-base font-bold text-primary transition-colors hover:bg-primary-50">
+                <button type="button" className="h-10 rounded-sm border border-primary bg-background px-6 text-base font-bold text-primary transition-colors hover:bg-primary-50">
                   個人プランを見る
                 </button>
               </div>
@@ -307,10 +307,10 @@ export default function Home() {
           <h2 className="mb-2 text-xl font-bold">まずは14日間無料でお試し</h2>
           <p className="mb-8 text-base opacity-90">メールアドレスだけで今すぐ開始。自動課金なし。</p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button className="h-12 rounded-sm bg-white px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
+            <button type="button" className="h-12 rounded-sm bg-white px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
               無料トライアル開始
             </button>
-            <button className="h-12 rounded-sm border-2 border-white px-8 text-lg font-bold text-white transition-colors hover:bg-white/10">
+            <button type="button" className="h-12 rounded-sm border-2 border-white px-8 text-lg font-bold text-white transition-colors hover:bg-white/10">
               資料をダウンロード
             </button>
           </div>

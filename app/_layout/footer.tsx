@@ -26,10 +26,10 @@ export function Footer() {
               ※これはv0デモテンプレートです
             </p>
           </div>
-          <div>
-            <h4 className="mb-3 text-base font-bold text-white">
+          <nav aria-label="製品・サービス">
+            <h3 className="mb-3 text-base font-bold text-white">
               製品・サービス
-            </h4>
+            </h3>
             <ul className="space-y-2">
               {productLinks.map((link) => (
                 <li key={link.href}>
@@ -42,9 +42,9 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h4 className="mb-3 text-base font-bold text-white">サポート</h4>
+          </nav>
+          <nav aria-label="サポート">
+            <h3 className="mb-3 text-base font-bold text-white">サポート</h3>
             <ul className="space-y-2">
               {supportLinks.map((link) => (
                 <li key={link.label}>
@@ -57,7 +57,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
         <div className="mt-10 border-t border-sand-700 pt-6 text-center text-sm text-sand-500">
           © 2026 ACME Demo | v0 Template Showcase
