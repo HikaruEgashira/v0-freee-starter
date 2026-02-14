@@ -40,26 +40,38 @@ const stats = [
   { value: "500+", label: "外部サービス連携数", note: "※2026年2月時点" },
 ];
 
-const solutions = [
+const segments = [
   {
-    title: "経理・財務",
-    description: "請求書作成から決算書まで一元管理したい",
+    title: "中小企業の経営者",
+    description:
+      "経理・労務・経営分析をひとつに統合。バラバラだったシステムをまとめ、経営判断に集中できる環境を。",
+    products: ["ACME会計", "ACME労務"],
     href: "/accounting",
+    icon: "🏗️",
   },
   {
-    title: "人事労務",
-    description: "給与計算と勤怠管理を自動化したい",
+    title: "バックオフィス担当者",
+    description:
+      "手作業の入力・転記をゼロに。請求書処理から給与計算まで自動化し、月次決算を最短で。",
+    products: ["ACME会計", "ACME労務"],
     href: "/hr",
+    icon: "⚙️",
   },
   {
-    title: "起業・会社設立",
-    description: "会社設立の手続きを簡単にしたい",
+    title: "フリーランス・個人事業主",
+    description:
+      "確定申告も請求書も最小限の手間で完了。本業に集中できる時間を取り戻す。",
+    products: ["ACME会計"],
+    href: "/accounting",
+    icon: "💻",
+  },
+  {
+    title: "スタートアップ創業者",
+    description:
+      "会社設立から経理体制の構築まで一気通貫。成長フェーズに合わせて機能を拡張。",
+    products: ["ACME起業", "ACME会計"],
     href: "/launch",
-  },
-  {
-    title: "データ分析",
-    description: "経営データを可視化して意思決定したい",
-    href: "/analytics",
+    icon: "🚀",
   },
 ];
 
@@ -124,23 +136,29 @@ export default function Home() {
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="mb-10 text-center">
             <h2 className="mb-2 text-xl font-bold text-foreground">
-              お客さまの課題に合わせたソリューション
+              あなたに合った使い方
             </h2>
             <p className="text-base text-sub-text">
-              ACMEがさまざまなビジネス課題の解決を支援します
+              立場やフェーズに応じた最適なソリューションをご提案します
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {solutions.map((solution) => (
+            {segments.map((segment) => (
               <Link
-                key={solution.title}
-                href={solution.href}
+                key={segment.title}
+                href={segment.href}
                 className="group rounded-md border border-base2 bg-background p-6 transition-colors hover:border-primary/30 hover:bg-primary-50/30"
               >
+                <span className="mb-3 block text-2xl">{segment.icon}</span>
                 <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
-                  {solution.title}
+                  {segment.title}
                 </h3>
-                <p className="text-sm text-sub-text">{solution.description}</p>
+                <p className="mb-3 text-sm text-sub-text">
+                  {segment.description}
+                </p>
+                <p className="text-xs text-sub-text">
+                  {segment.products.join(" / ")}
+                </p>
                 <span className="mt-4 inline-block text-sm font-bold text-link">
                   詳しく見る →
                 </span>
