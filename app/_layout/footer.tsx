@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const productLinks = [
-  { label: "freee会計", href: "/accounting" },
-  { label: "freee人事労務", href: "/hr" },
-  { label: "freee会社設立", href: "/launch" },
+  { label: "ACME会計", href: "/accounting" },
+  { label: "ACME労務", href: "/hr" },
+  { label: "ACME起業", href: "/launch" },
 ];
 
 const supportLinks = [
@@ -18,9 +18,12 @@ export function Footer() {
       <div className="mx-auto max-w-[70rem] px-6 py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <span className="text-xl font-bold text-white">freee</span>
+            <span className="text-xl font-bold text-white">ACME</span>
             <p className="mt-3 text-sm leading-relaxed">
-              スモールビジネスを、世界の主役に。
+              ビジネスの流れを、一つに。
+            </p>
+            <p className="mt-2 text-xs text-sand-500">
+              ※これはv0デモテンプレートです
             </p>
           </div>
           <div>
@@ -57,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-sand-700 pt-6 text-center text-sm text-sand-500">
-          Copyright &copy; 2012-2026 freee K.K.
+          © 2026 ACME Demo | v0 Template Showcase
         </div>
       </div>
     </footer>

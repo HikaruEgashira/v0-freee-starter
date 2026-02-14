@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const products = [
   {
-    name: "freee会計",
+    name: "ACME会計",
     href: "/accounting",
     category: "経理・財務",
     description:
@@ -11,7 +11,7 @@ const products = [
     icon: "📊",
   },
   {
-    name: "freee人事労務",
+    name: "ACME労務",
     href: "/hr",
     category: "人事労務",
     description:
@@ -20,7 +20,7 @@ const products = [
     icon: "👥",
   },
   {
-    name: "freee会社設立",
+    name: "ACME起業",
     href: "/launch",
     category: "起業・会社設立",
     description:
@@ -31,35 +31,35 @@ const products = [
 ];
 
 const stats = [
-  { value: "62万", label: "有料課金ユーザー企業数", note: "※2025年3月末時点" },
+  { value: "15,000+", label: "導入企業数", note: "※2026年2月時点" },
   {
-    value: "No.1",
-    label: "クラウド会計ソフト市場シェア",
-    note: "※リードプラス調べ",
+    value: "98%",
+    label: "顧客満足度",
+    note: "※自社調査",
   },
-  { value: "1,043社", label: "金融機関との連携社数", note: "※2023年6月末時点" },
+  { value: "500+", label: "外部サービス連携数", note: "※2026年2月時点" },
 ];
 
 const solutions = [
   {
     title: "経理・財務",
-    description: "自分で決算、経営状況を見える化したい",
+    description: "請求書作成から決算書まで一元管理したい",
     href: "/accounting",
   },
   {
     title: "人事労務",
-    description: "紙から解放されて、労務管理を正しく行いたい",
+    description: "給与計算と勤怠管理を自動化したい",
     href: "/hr",
   },
   {
     title: "起業・会社設立",
-    description: "コストを抑えつつ、自分でミスなく会社設立したい",
+    description: "会社設立の手続きを簡単にしたい",
     href: "/launch",
   },
   {
-    title: "確定申告",
-    description: "はじめてでもカンタンに確定申告を完了させたい",
-    href: "/accounting",
+    title: "データ分析",
+    description: "経営データを可視化して意思決定したい",
+    href: "/analytics",
   },
 ];
 
@@ -71,28 +71,28 @@ export default function Home() {
         <div className="mx-auto max-w-[70rem] px-6">
           <div className="max-w-2xl">
             <p className="mb-4 text-base font-bold text-primary">
-              統合型経営プラットフォーム
+              ビジネス統合プラットフォーム
             </p>
             <h1 className="mb-6 text-[2.5rem] font-bold leading-tight text-foreground md:text-[3rem]">
-              すべての
+              ビジネスの流れを
               <br />
-              スモールビジネスを
+              一つにまとめる。
               <br />
-              <span className="text-primary">支える。</span>
+              <span className="text-primary">ACMEで。</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-sub-text">
-              freeeは、従来バラバラに存在していた業務やデータを、フロントオフィスからバックオフィスまで一気通貫させ、スモールビジネスが専門家や取引先とつながるプラットフォームです。
+              ACMEは、バラバラだった業務システムを統合し、中小企業の生産性を最大化するクラウドプラットフォームです。
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <button className="h-12 rounded-sm bg-primary px-8 text-lg font-bold text-white transition-colors hover:bg-primary-800">
-                無料で始める
+                無料トライアル
               </button>
               <button className="h-12 rounded-sm border border-primary bg-background px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
-                製品一覧はこちら
+                機能を見る
               </button>
             </div>
             <p className="mt-4 text-sm text-sub-text">
-              クレジットカード不要 / 30日間無料
+              クレジットカード不要 / 14日間無料
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function Home() {
               お客さまの課題に合わせたソリューション
             </h2>
             <p className="text-base text-sub-text">
-              freeeではさまざまなバックオフィス領域の課題解決への手段を紹介しています
+              ACMEがさまざまなビジネス課題の解決を支援します
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -158,7 +158,7 @@ export default function Home() {
               製品・サービス
             </p>
             <h2 className="mb-2 text-xl font-bold text-foreground">
-              freeeなら最適なサービスに出会える
+              ACMEで業務を一元管理
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -193,7 +193,7 @@ export default function Home() {
               href="#"
               className="text-base font-bold text-link hover:underline"
             >
-              すべての製品・サービスをみる →
+              すべての機能を見る →
             </Link>
           </div>
         </div>
@@ -205,32 +205,32 @@ export default function Home() {
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
               <p className="mb-2 text-base font-bold text-primary">
-                個人事業主・副業のお客さまへ
+                個人事業主・フリーランスの方へ
               </p>
               <h2 className="mb-4 text-xl font-bold leading-snug text-foreground">
-                好きなことをする時間を
+                本業に集中できる
                 <br />
-                大切にして欲しいから。
+                環境を。
               </h2>
               <p className="mb-6 text-base leading-relaxed text-sub-text">
-                freeeは、フリーランスの皆さまを煩わしさから解放し、もっと自由にビジネスができる環境を提供しています。
+                ACMEは、フリーランスの方々が事務作業から解放され、本来の仕事に集中できる環境を提供します。
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <button className="h-10 rounded-sm bg-primary px-6 text-base font-bold text-white transition-colors hover:bg-primary-800">
-                  freee会計で確定申告をはじめる
+                  ACME会計で確定申告
                 </button>
                 <button className="h-10 rounded-sm border border-primary bg-background px-6 text-base font-bold text-primary transition-colors hover:bg-primary-50">
-                  個人向け製品をみる
+                  個人プランを見る
                 </button>
               </div>
             </div>
             <div className="rounded-lg bg-background p-8 shadow-card">
               <blockquote className="border-l-4 border-primary-brand pl-4">
                 <p className="mb-4 text-base italic leading-relaxed text-foreground">
-                  「締め作業はほぼゼロに、freee会計導入後は家族と過ごす幸せな時間が増えました。」
+                  「事務作業が半分に減り、クライアントワークに集中できるようになりました。」
                 </p>
                 <footer className="text-sm text-sub-text">
-                  宿泊・旅行サービス業 | ひといき荘アウトドアサービス 藤井様
+                  Webデザイナー | 田中様
                 </footer>
               </blockquote>
             </div>
@@ -245,18 +245,18 @@ export default function Home() {
           <div className="space-y-4">
             {[
               {
-                date: "2026/01/29",
-                title: "【2025.12月度】新機能情報",
+                date: "2026/02/10",
+                title: "【新機能】AIによる経費自動分類機能をリリース",
               },
               {
-                date: "2025/11/04",
+                date: "2026/01/25",
                 title:
-                  "【freee会計モバイル・freee経費精算モバイル】強制アップデートのお知らせ",
+                  "【モバイルアプリ】iOS/Android版アップデート v2.5.0",
               },
               {
-                date: "2025/01/22",
+                date: "2026/01/15",
                 title:
-                  "2026年確定申告時期におけるサポートデスクの営業日時について",
+                  "確定申告シーズンのサポート時間延長のお知らせ",
               },
             ].map((news) => (
               <Link
@@ -279,11 +279,11 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-primary-600 py-16 text-center text-white">
         <div className="mx-auto max-w-[70rem] px-6">
-          <h2 className="mb-2 text-xl font-bold">今なら30日間無料でお試し可能</h2>
-          <p className="mb-8 text-base opacity-90">登録はメールアドレスのみ。自動でお支払いは発生しません。</p>
+          <h2 className="mb-2 text-xl font-bold">まずは14日間無料でお試し</h2>
+          <p className="mb-8 text-base opacity-90">メールアドレスだけで今すぐ開始。自動課金なし。</p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <button className="h-12 rounded-sm bg-white px-8 text-lg font-bold text-primary transition-colors hover:bg-primary-50">
-              無料で始める
+              無料トライアル開始
             </button>
             <button className="h-12 rounded-sm border-2 border-white px-8 text-lg font-bold text-white transition-colors hover:bg-white/10">
               資料をダウンロード
