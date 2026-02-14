@@ -22,6 +22,24 @@
   --notice: #be8c14;
   --scrim: rgba(0, 0, 0, 0.5);
   --scrim-thin: rgba(0, 0, 0, 0.12);
+
+  /* shadcn compatible semantic tokens */
+  --card: #ffffff;
+  --card-foreground: #323232;
+  --popover: #ffffff;
+  --popover-foreground: #323232;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f5f5;
+  --secondary-foreground: #323232;
+  --muted: #f7f5f5;
+  --muted-foreground: #6e6b6b;
+  --accent-foreground: #143278;
+  --destructive: #dc1e32;
+  --destructive-foreground: #ffffff;
+  --border: #e9e7e7;
+  --input: #e9e7e7;
+  --ring: #2864f0;
+  --radius: 0.5rem;
 }
 
 @theme {
@@ -124,6 +142,23 @@
   --color-scrim: var(--scrim);
   --color-scrim-thin: var(--scrim-thin);
 
+  /* shadcn semantic */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
   /* Typography */
   --font-sans: "-apple-system", BlinkMacSystemFont, "Helvetica Neue",
     "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo,
@@ -138,12 +173,12 @@
   /* Spacing (base unit: 4px) */
   --spacing: 0.25rem;
 
-  /* Border Radius */
+  /* Border Radius (shadcn compatible) */
   --radius-xs: 0.25rem;
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --radius-full: 99rem;
 
 
