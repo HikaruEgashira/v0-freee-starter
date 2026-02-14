@@ -7,7 +7,7 @@ const products = [
     category: "経理・財務",
     description:
       "請求・支払業務から会計帳簿・決算書の作成、経営管理まで。経理をスムーズに行える会計ソフト。",
-    color: "bg-primary-400",
+    color: "bg-primary-100",
     icon: "📊",
   },
   {
@@ -16,7 +16,7 @@ const products = [
     category: "人事労務",
     description:
       "給与計算や労務管理を大幅に効率化。給与明細や年末調整、入社手続きから勤怠管理まで。",
-    color: "bg-green-500",
+    color: "bg-green-100",
     icon: "👥",
   },
   {
@@ -25,7 +25,7 @@ const products = [
     category: "起業・会社設立",
     description:
       "会社設立に必要な書類を無料で一括作成。設立コストを大幅に削減。",
-    color: "bg-orange-500",
+    color: "bg-orange-100",
     icon: "🏢",
   },
 ];
@@ -78,7 +78,7 @@ export default function Home() {
               <br />
               一つにまとめる。
               <br />
-              <span className="text-primary">ACMEで。</span>
+              <span className="text-primary">統合型プラットフォーム</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-sub-text">
               ACMEは、バラバラだった業務システムを統合し、中小企業の生産性を最大化するクラウドプラットフォームです。
@@ -135,7 +135,7 @@ export default function Home() {
               <Link
                 key={solution.title}
                 href={solution.href}
-                className="group rounded-md bg-background p-6 shadow-card transition-shadow hover:shadow-floating"
+                className="group rounded-md border border-base2 bg-background p-6 transition-colors hover:border-primary/30 hover:bg-primary-50/30"
               >
                 <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary">
                   {solution.title}
@@ -166,7 +166,7 @@ export default function Home() {
               <Link
                 key={product.name}
                 href={product.href}
-                className="group overflow-hidden rounded-lg bg-background shadow-card transition-shadow hover:shadow-floating"
+                className="group overflow-hidden rounded-lg border border-base2 bg-background transition-colors hover:border-primary/30"
               >
                 <div className={`${product.color} p-8 text-center`}>
                   <span className="text-[3rem]">{product.icon}</span>
@@ -224,7 +224,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="rounded-lg bg-background p-8 shadow-card">
+            <div className="rounded-lg border border-base2 bg-background p-8">
               <blockquote className="border-l-4 border-primary-brand pl-4">
                 <p className="mb-4 text-base italic leading-relaxed text-foreground">
                   「事務作業が半分に減り、クライアントワークに集中できるようになりました。」

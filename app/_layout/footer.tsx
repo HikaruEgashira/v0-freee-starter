@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <span className="text-xl font-bold text-white">ACME</span>
             <p className="mt-3 text-sm leading-relaxed">
-              ビジネスの流れを、一つに。
+              スモールビジネスを世界の主役に。
             </p>
             <p className="mt-2 text-xs text-sand-500">
               ※これはv0デモテンプレートです
